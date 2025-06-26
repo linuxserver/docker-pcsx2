@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run pcsx2
+xterm -e /usr/bin/pcsx2-qt
