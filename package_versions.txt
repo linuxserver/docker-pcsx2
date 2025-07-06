@@ -1012,7 +1012,7 @@ pci.ids                                                                       0.
 pciutils                                                                      1:3.10.0-2build1                                 deb                            
 pcmflux                                                                       1.0.3                                            python                         
 pcsx2-patches                                                                 0.1-0~git202507041846~8f35cd5~ubuntu24.04.1      deb                            
-pcsx2-unstable                                                                3:2.5.0~git202507051222~e546acec1~ubuntu24.04.1  deb                            
+pcsx2-unstable                                                                3:2.5.0~git202507061644~6dc92b00a~ubuntu24.04.1  deb                            
 perl                                                                          5.38.2-3.2ubuntu0.1                              deb                            
 perl-base                                                                     5.38.2-3.2ubuntu0.1                              deb                            
 perl-modules-5.38                                                             5.38.2-3.2ubuntu0.1                              deb                            
