@@ -147,7 +147,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -s -L https://ppa.launchpadcontent.net/pcsx2-team/pcsx2-daily/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: pcsx2-unstable' | awk -F ': ' '/Version/{print $2;exit}' | awk -F':' '{print $2}' | awk -F'~' '{print $1 $2 $3}' ''',
+            script: ''' curl -s -L https://ppa.launchpadcontent.net/pcsx2-team/pcsx2-daily/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: pcsx2-stable' | awk -F ': ' '/Version/{print $2;exit}' | awk -F'~' '{print $1}' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }

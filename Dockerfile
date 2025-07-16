@@ -26,7 +26,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install --no-install-recommends -y \
     libqt6svg6 \
-    pcsx2-unstable && \
+    pcsx2-stable && \
   setcap -r \
     /usr/bin/pcsx2-qt && \
   echo "**** cleanup ****" && \

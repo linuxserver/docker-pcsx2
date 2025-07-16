@@ -104,4 +104,5 @@ init_diagram: |
   "pcsx2:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "15.07.25:", desc: "Switch to stable release for pcsx2."}
   - {date: "26.06.25:", desc: "Initial release."}
