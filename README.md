@@ -60,6 +60,8 @@ The application can be accessed at:
 
 * https://yourhost:3001/
 
+**Make sure to set the proper graphics settings for your system, "Automatic" will not work and OpenGL is the most compatible**
+
 ### Strict reverse proxies
 
 This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
