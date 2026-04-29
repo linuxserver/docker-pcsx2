@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-selkies:ubuntunoble
+FROM ghcr.io/linuxserver/baseimage-selkies:ubunturesolute
 
 # set version label
 ARG BUILD_DATE
@@ -19,19 +19,13 @@ RUN \
     /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pcsx2-logo.png && \
   echo "**** install packages ****" && \
-  apt-key adv \
-    --keyserver hkp://keyserver.ubuntu.com:80 \
-    --recv-keys D7B449CFE17E659E5A12EE8EDD6EEEA2BD747717 && \
-  echo \
-    "deb https://ppa.launchpadcontent.net/pcsx2-team/pcsx2-daily/ubuntu noble main" > \
-    /etc/apt/sources.list.d/pcsx2.list && \
+  add-apt-repository ppa:pcsx2-team/pcsx2-daily && \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install --no-install-recommends -y \
     libqt6svg6 \
-    pcsx2-stable && \
-  setcap -r \
-    /usr/bin/pcsx2-qt && \
+    pcsx2 \
+    qt6-wayland && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
