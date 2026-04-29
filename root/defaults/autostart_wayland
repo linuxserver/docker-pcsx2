@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Run pcsx2
-foot -e /usr/bin/pcsx2-qt
+foot -e /usr/games/pcsx2-qt
