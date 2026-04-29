@@ -26,6 +26,9 @@ RUN \
     libqt6svg6 \
     pcsx2 \
     qt6-wayland && \
+  ln -s \
+    /usr/games/pcsx2-qt \
+    /usr/bin/pcsx2-qt && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
