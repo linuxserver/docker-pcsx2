@@ -34,6 +34,8 @@ app_setup_block: |
   The application can be accessed at:
 
   * https://yourhost:3001/
+
+  **Make sure to set the proper graphics settings for your system, "Automatic" will not work and OpenGL is the most compatible**
 # init diagram
 init_diagram: |
   "pcsx2:latest": {
@@ -106,6 +108,7 @@ init_diagram: |
   "pcsx2:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "29.04.26:", desc: "Rebase to resolute."}
   - {date: "05.03.26:", desc: "Make Wayland default disable with PIXELFLUX_WAYLAND=false."}
   - {date: "20.12.25:", desc: "Add Wayland init logic."}
   - {date: "15.07.25:", desc: "Switch to stable release for pcsx2."}
