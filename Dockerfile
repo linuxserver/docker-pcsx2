@@ -24,6 +24,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install --no-install-recommends -y \
     libqt6svg6 \
+    libshaderc1 \
     pcsx2 \
     qt6-wayland && \
   ln -s \
